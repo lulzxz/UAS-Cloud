@@ -3,7 +3,7 @@ name: Deploy Laravel ke EC2
 on:
   push:
     branches:
-      - master
+      - main  # GANTI JIKA KAMU PAKAI 'master'
 
 jobs:
   deploy:
@@ -21,6 +21,6 @@ jobs:
         key: ${{ secrets.EC2_SSH }}
         script: |
           cd /home/ec2-user/UAS-Cloud
-          git pull origin main
-          docker compose down
-          docker compose up -d
+          git pull origin master    
+          sudo docker compose down
+          sudo docker compose up -d --build

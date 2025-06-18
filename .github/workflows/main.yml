@@ -10,17 +10,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repo
-      uses: actions/checkout@v3
+      - name: Checkout repo
+        uses: actions/checkout@v3
 
-    - name: Deploy ke EC2 via SSH
-      uses: appleboy/ssh-action@v0.1.6
-      with:
-        host: ${{ secrets.EC2_HOST }}
-        username: ec2-user
-        key: ${{ secrets.EC2_SSH }}
-        script: |
-          cd /home/ec2-user/UAS-Cloud
-          git pull origin master
-          sudo docker compose down
-          sudo docker compose up -d --build
+      - - name: Deploy ke EC2 via SSH
+  uses: appleboy/ssh-action@v0.1.6
+  with:
+    host: ${{ secrets.EC2_HOST }}
+    username: ec2-user
+    key: ${{ secrets.EC2_SSH }}
+    script: |
+      cd /home/ec2-user/UAS-Cloud
+      git pull origin master
+      sudo docker-compose down
+      sudo docker-compose up -d --build

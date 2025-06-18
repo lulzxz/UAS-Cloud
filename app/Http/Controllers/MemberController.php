@@ -95,7 +95,7 @@ class MemberController extends Controller
         $validator = Validator::make($request->all(),[
             'nama_member' => 'required',
             'provinsi' => 'required',
-            'kabupaten' => 'required',
+            'kota' => 'required',
             'kecamatan' => 'required',
             'detail_alamat' => 'required',
             'no_hp' => 'required',

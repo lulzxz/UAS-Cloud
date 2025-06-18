@@ -33,7 +33,7 @@
                                 <label for="billing_first_name">Kota
                                     <abbr class="required" title="required">*</abbr>
                                 </label>
-                                <select name="kabupaten" id="kota" class="country_to_state kota"
+                                <select name="kota" id="kota" class="country_to_state kota"
                                     rel="calc_shipping_state">
 
                                 </select>

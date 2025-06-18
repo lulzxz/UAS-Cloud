@@ -64,8 +64,8 @@
                             <img src="front/img/team/team_21.jpg" alt="">
                         </div>
                         <div class="team-details text-center">
-                            <h4 class="team-title">Mochamad Abel Avriyana S </h4>
-                            <span>Co-founder</span>
+                            <h4 class="team-title">M Fahdira Kusumadinata</h4>
+                            <span>CEO of Company</span>
                             <div class="social-icons rounded">
                             <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
                             </div>
@@ -81,8 +81,8 @@
                             <img src="front/img/team/team_31.jpeg" alt="">
                         </div>
                         <div class="team-details text-center">
-                            <h4 class="team-title">Muhammad Aulia Rachman</h4>
-                            <span>Marketing Officer</span>
+                            <h4 class="team-title">Zaky Arif Rahman</h4>
+                            <span>CEO of Company</span>
                             <div class="social-icons rounded">
                                 <a href="https://www.instagram.com/crystalfndy/"><i class="fa fa-instagram"></i></a>
                             </div>

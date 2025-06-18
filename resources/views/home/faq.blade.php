@@ -210,7 +210,7 @@
             <h6>Information</h6>
             <ul>
               <li>
-                <i class="fa fa-envelope"></i><a href="mailto:theme@support.com">theoasis@support.com</a>
+                <i class="fa fa-envelope"></i><a href="mailto:theme@support.com">theoasis2@support.com</a>
               </li>
               <li>
                 <i class="fa fa-phone"></i><span>+1 (800) 888 5260 52 63</span>

@@ -18,7 +18,7 @@ jobs:
       with:
         host: ${{ secrets.EC2_HOST }}
         username: ec2-user
-        key: ${{ secrets.EC2_SSH_KEY }}
+        key: ${{ secrets.EC2_SSH }}
         script: |
           cd /home/ec2-user/UAS-Cloud
           git pull origin main

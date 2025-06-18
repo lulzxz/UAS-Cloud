@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::table('members', function (Blueprint $table) {
             $table->dropColumn('provinsi');
-            $table->dropColumn('kota/kabupaten');
+            $table->dropColumn('kota');
             $table->dropColumn('kecamatan');
             $table->dropColumn('detail_alamat');
         });

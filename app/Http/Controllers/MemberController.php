@@ -21,14 +21,14 @@ class MemberController extends Controller
     {
         $member = Member::all();
 
-        return response()->json($member); 
+        return response()->json($member);
     }
 
     /**
      * Show the form for creating a new resource.
      */
     public function create()
-    { 
+    {
         //
     }
 
@@ -40,14 +40,14 @@ class MemberController extends Controller
         $validator = Validator::make($request->all(),[
             'nama_member' => 'required',
             'provinsi' => 'required',
-            'kota/kabupaten' => 'required',
+            'kota' => 'required',
             'kecamatan' => 'required',
             'detail_alamat' => 'required',
             'no_hp' => 'required',
             'email' => 'required',
             'password' => 'required|same:konfirmasi_password',
             'konfirmasi_password' => 'required|same:password',
-            
+
 
         ]);
 
@@ -62,7 +62,7 @@ class MemberController extends Controller
         $input['password']=bcrypt($request->password);
         unset($input['konfirmasi_password']);
         $Member = Member::create($input);
-        
+
         return response()->json([
             'data' => $Member
         ]);
@@ -102,7 +102,7 @@ class MemberController extends Controller
             'email' => 'required|email',
             'password' => 'required|same:konfirmasi_password',
             'konfirmasi_password' => 'required|same:password',
-            
+
         ]);
 
         if ($validator->fails()){

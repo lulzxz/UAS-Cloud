@@ -16,7 +16,7 @@ return new class extends Migration
             $table->integer('id_order');
             $table->integer('jumlah');
             $table->string('provinsi');
-            $table->string('kota/kabupaten');
+            $table->string('kota');
             $table->string('kecamatan');
             $table->string('detail_alamat');
             $table->string('no_rekening');

@@ -3,7 +3,7 @@ version: '3.8'
 services:
   app:
     build: .
-    container_name: laravel_app
+    container_name: uas_cloud
     ports:
       - "8000:8000"
     volumes:
@@ -16,8 +16,8 @@ services:
     restart: always
     container_name: laravel_pg
     environment:
-      POSTGRES_DB: ecommerce
+      POSTGRES_DB: uas_db
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
+      POSTGRES_PASSWORD: 08595922708f
     ports:
       - "5432:5432"

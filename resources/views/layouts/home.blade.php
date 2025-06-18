@@ -7,7 +7,7 @@
   <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="">
-  
+
   <!-- Google Fonts -->
   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700%7COpen+Sans:400,400i,600,700' rel='stylesheet'>
 
@@ -48,10 +48,10 @@
               <div class="search-field-holder">
                 <input type="search" class="form-control main-search-input" placeholder="Search for">
                 <i class="ui-close search-close" id="search-close"></i>
-              </div>            
+              </div>
             </form>
           </div>
-        </div>        
+        </div>
       </div> <!-- end fullscreen search -->
 
       <nav class="navbar navbar-static-top">
@@ -68,7 +68,7 @@
                       @php
                       $about = App\Models\About::first();
                       @endphp
-                      <img class="logo-dark2" src="/uploads/{{$about->logo}}" alt="logo"  >
+                      {{-- <img class="logo-dark2" src="/uploads/{{$about->logo}}" alt="logo"  > --}}
                     </a>
                   </div>
                 </div>
@@ -92,7 +92,7 @@
 
               <div class="nav-wrap flex-child">
                 <div class="collapse navbar-collapse text-center" id="navbar-collapse">
-                  
+
                   <ul class="nav navbar-nav">
 
                     <li class="dropdown">
@@ -106,7 +106,7 @@
 
                     @php
                         $categories = App\Models\Category::all();
-                        
+
                     @endphp
 
                     <li class="dropdown">
@@ -116,7 +116,7 @@
                         <li>
                           <div class="megamenu-wrap container">
                             <div class="row">
-                              @foreach ($categories as $category)                                  
+                              @foreach ($categories as $category)
                               <div class="col-md-3 megamenu-item">
                                 <ul class="menu-list">
                                   <li>
@@ -127,15 +127,15 @@
                                        $category ->id)->get();
                                   @endphp
                                   @foreach ($subcategories as $subcategory)
-                                      
+
                                   <li>
-                                    <a href="/products/{{ $subcategory->id }}">{{ $subcategory->nama_subkategori }}</a> 
+                                    <a href="/products/{{ $subcategory->id }}">{{ $subcategory->nama_subkategori }}</a>
                                   </li>
                                   @endforeach
                                 </ul>
                                 </div>
                                 @endforeach
-                              </div> 
+                              </div>
                             </div>
                           </li>
                         </ul>
@@ -145,12 +145,12 @@
                         <a href="/faq">F.A.Q</a>
                         <i class="fa fa-angle-down dropdown-trigger"></i>
                     </li>
-                    
+
                     <li class="dropdown">
                         <a href="/contact">Contact Us</a>
                     <i class="fa fa-angle-down dropdown-trigger"></i>
                       </li>
-      
+
                     <!-- Mobile search -->
                     <li id="mobile-search" class="hidden-lg hidden-md">
                       <form method="get" class="mobile-search">
@@ -193,7 +193,7 @@
                     </li>
                 </ul>
             </div>
-          
+
             </div> <!-- end row -->
           </div> <!-- end container -->
         </div> <!-- end navigation -->
@@ -215,7 +215,7 @@
               </form>
             </div>
           </div>
-        </div>       
+        </div>
       </section>
 
       <!-- Footer Type-1 -->
@@ -250,7 +250,7 @@
               <div class="col-md-2 col-sm-6 col-xs-12">
                 <div class="widget footer-links">
                   <h5 class="widget-title bottom-line left-align grey">Account</h5>
-                  <ul class="list-no-dividers">                  
+                  <ul class="list-no-dividers">
                     <li><a href="/register_member">Register</a></li>
                     <li><a href="/profile">My account</a></li>
                   </ul>
@@ -280,7 +280,7 @@
               </div>
 
             </div>
-          </div>    
+          </div>
         </div> <!-- end container -->
 
         <div class="bottom-footer">
@@ -316,7 +316,7 @@
   <!-- jQuery Scripts -->
   <script type="text/javascript" src="/front/js/jquery.min.js"></script>
   <script type="text/javascript" src="/front/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="/front/js/plugins.js"></script>  
+  <script type="text/javascript" src="/front/js/plugins.js"></script>
   <script type="text/javascript" src="/front/js/scripts.js"></script>
   @stack('js')
 </body>

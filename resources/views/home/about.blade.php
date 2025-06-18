@@ -67,7 +67,7 @@
                             <h4 class="team-title">Mochamad Abel Avriyana S </h4>
                             <span>Co-founder</span>
                             <div class="social-icons rounded">
-                            <a href="https://www.instagram.com/shafirakf/"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
